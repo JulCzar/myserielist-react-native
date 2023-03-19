@@ -1,0 +1,42 @@
+import { CountryData } from './CountryData';
+import { Creator } from './Creator';
+import { Episode } from './Episode';
+import { Genre } from './Genre';
+import { LanguageData } from './LanguageData';
+import { ProductionCountry } from './ProductionCountry';
+import { RegionInfo } from './RegionInfo';
+import { Season } from './Season';
+
+export interface SerieDetails {
+  backdrop_path: string;
+  created_by: Creator[];
+  episode_run_time: number[];
+  first_air_date: string;
+  genres: Genre[];
+  homepage: string;
+  id: number;
+  in_production: boolean;
+  languages: { 0: string };
+  last_air_date: string;
+  last_episode_to_air: Episode;
+  name: string;
+  next_episode_to_air: null;
+  networks: RegionInfo[];
+  number_of_episodes: number;
+  number_of_seasons: number;
+  origin_country: string[];
+  original_language: string;
+  original_name: string;
+  overview: string;
+  popularity: number;
+  poster_path: string;
+  production_companies: ProductionCountry[];
+  production_countries: CountryData[];
+  seasons: Season[];
+  spoken_languages: LanguageData[];
+  status: string;
+  tagline: string;
+  type: string;
+  vote_average: number;
+  vote_count: number;
+}
